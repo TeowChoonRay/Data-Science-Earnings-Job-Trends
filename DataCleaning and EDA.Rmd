@@ -1,0 +1,188 @@
+---
+title: "MH3511 Team Project"
+output: html_notebook
+---
+
+# Data Science Fields Salary Categorization Dataset
+
+## Overview
+This dataset aims to shed light on the salary trends in the field of Data Science for the years 2021 to 2023. With a focus on various aspects of employment, including work experience, job designation, and company locations, this dataset provides valuable insights into salary distributions within the industry.
+
+## Load packages
+```{r}
+install.packages("dplyr")
+library(dplyr)
+```
+
+## Import Dataset
+```{r}
+# Change Directory to Location of Dataset
+df <- read.csv("/Users/nicoleang/Downloads/Data_Science_Fields_Salary_Categorization.csv")
+
+# Display the first few rows
+head(df)
+summary(df)
+```
+
+## Data Cleaning
+```{r}
+# Check for missing values in each column
+colSums(is.na(df))
+```
+
+```{r}
+# Check for any duplicate rows
+sum(duplicated(df))
+```
+
+```{r}
+# Dropping of irrelevant columns (Employee Location - Not used in the analysis)
+df <- subset(df, select = -c(1, Employee_Location))
+```
+
+```{r}
+# Dropping of observations in Employment_Status that are not 'FT'
+
+# Check for unique values under Employment_Status
+table(df$Employment_Status)
+# Remove observations where Employment_Status is 'CT', 'PT', 'FL'
+df <- subset(df, !Employment_Status %in% c('CT', 'PT', 'FL'))
+```
+
+```{r}
+# Convert Salary from Rupees to SGD
+# Convert Salary from character string to numeric values
+df$Salary_In_Rupees <- as.numeric(gsub(",", "", df$Salary_In_Rupees))
+# Currency Conversion
+df$Salary_In_Rupees <- df$Salary_In_Rupees * 0.016
+# Rename Salary_In_Rupees to Salary_In_SGD
+colnames(df)[colnames(df) == "Salary_In_Rupees"] <- "Salary_In_SGD"
+head(df)
+```
+
+
+```{r}
+table(df$Designation)
+# Filter observations to only include Designation as 'Data Scientist', 'Data Engineer', 'Data Analyst', 'Machine Learning Engineer'
+df <- df[df$Designation %in% c("Data Scientist", "Data Engineer", "Data Analyst", "Machine Learning Engineer"), ]
+```
+
+## Summary Statistics
+
+### Working_Year
+```{r}
+year_count <- table(df$Working_Year)
+barplot(year_count, 
+        main = "Working Year", 
+        xlab = "Working_Year", 
+        ylab = "Frequency", 
+        col = "grey")
+```
+### Designation
+```{r}
+# Split "Designation" column into lists
+split_desgn <- strsplit(df$Designation, ",")
+# Remove extra spaces
+split_desgn <- lapply(split_desgn, trimws)
+# Create new data frame with individual categories
+df.desgn <- data.frame(Designation = unlist(split_desgn))
+# Plot bar plot
+barplot(table(df.desgn$Designation), main="Designation")
+```
+### Experience
+```{r}
+table(df$Experience)
+# Split "Experience" column into lists
+split_exp <- strsplit(df$Experience, ",")
+# Remove extra spaces
+split_exp <- lapply(split_exp, trimws)
+# Create new data frame with individual categories
+df.exp <- data.frame(Experience = unlist(split_exp))
+# Plot bar plot
+barplot(table(df.exp$Experience), main="Experience Level")
+
+# Check number of observations with Experience == 'EX'
+sum(df.exp$Experience == "EX")
+# Remove observations with 'EX' as Experience
+df <- df[df$Experience != "EX", ]
+# Split "Experience" column into lists
+split_exp <- strsplit(df$Experience, ",")
+# Remove extra spaces
+split_exp <- lapply(split_exp, trimws)
+# Create new data frame with individual categories
+df.exp <- data.frame(Experience = unlist(split_exp))
+# Plot new bar plot
+barplot(table(df.exp$Experience), main="Experience Level")
+```
+### Company_Location
+```{r}
+# Split "Company_Location" column into lists
+split_loc <- strsplit(df$Company_Location, ",")
+# Remove extra spaces
+split_loc <- lapply(split_loc, trimws)
+# Create new data frame with individual categories
+df.loc <- data.frame(Company_Location = unlist(split_loc))
+
+# Create a table with the count of each Company_Location
+location_count <- table(df.loc$Company_Location)
+# Filter for locations with count greater than 10
+filtered_location_count <- location_count[location_count > 10]
+# Print the filtered values and counts
+print(filtered_location_count)
+
+# Plot bar plot for filtered values
+barplot(filtered_location_count, main="Company Location (count > 10)")
+```
+```{r}
+# Filter for Top 6 countries
+top_six <- subset(df, Company_Location %in% c("US", "GB", "CA", "DE", "IN", "FR"))
+
+# Order countries by median salary
+country_stats <- top_six %>%
+  group_by(Company_Location) %>%
+  summarize(
+    median_salary = median(Salary_In_SGD),
+    mean_salary = mean(Salary_In_SGD),
+    count = n()
+  ) %>%
+  arrange(desc(median_salary))
+
+country_stats
+```
+### Company_Size
+```{r}
+# Split "Company_Size" column into lists
+split_csize <- strsplit(df$Company_Size, ",")
+# Remove extra spaces
+split_csize <- lapply(split_csize, trimws)
+# Create new data frame with individual categories
+df.csize <- data.frame(Company_Size = unlist(split_csize))
+# Plot bar plot
+barplot(table(df.csize$Company_Size), main="Company Size")
+```
+### Remote_Working_Ratio
+```{r}
+ratio_count <- table(df$Remote_Working_Ratio)
+barplot(ratio_count, 
+        main = "Remote Working Ratio", 
+        xlab = "Remote_Working_Ratio", 
+        ylab = "Frequency", 
+        col = "grey")
+```
+### Salary_In_SGD
+```{r}
+# Plot overall distribution of variable Salary_In_SGD
+hist(df$Salary_In_SGD, xlab="Salary_In_SGD", main="Histogram of Salary In SGD")
+boxplot(df$Salary_In_SGD, main="Box Plot of Salary In SGD", ylab="Salary_In_SGD")
+
+# Remove outliers, Salary_In_SGD > 300000
+df <- df[df$Salary_In_SGD <= 300000, ]
+# Plot new overall distribution of variable Salary_In_SGD
+hist(df$Salary_In_SGD, xlab="Salary_In_SGD", main="Histogram of Salary In SGD")
+boxplot(df$Salary_In_SGD, main="Box Plot of Salary In SGD", ylab="Salary_In_SGD")
+summary(df)
+```
+## Save cleaned dataset as .csv file
+```{r}
+write.csv(df, "DataScienceSalaries.csv", row.names = FALSE)
+```
