@@ -1,0 +1,108 @@
+---
+title: "MH3511 Team Project"
+output: html_notebook
+---
+
+
+```{r}
+# Load libraries
+library(tidyverse)
+library(car)
+library(ggplot2)
+library(ggpubr)
+library(dplyr)
+library(stats)
+library(rstatix)
+library(RColorBrewer)
+```
+
+```{r}
+# Change Directory to Location of Dataset
+df <- read.csv("/Users/choonray/MH3511/Team Project/DataScienceSalaries.csv")
+```
+
+
+```{r}
+# Data Scientist
+df_data_scientist <- df %>%
+  filter(Designation == "Data Scientist")
+
+# Data Engineer
+df_data_engineer <- df %>%
+  filter(Designation == "Data Engineer")
+
+# Data Analyst
+df_data_analyst <- df %>%
+  filter(Designation == "Data Analyst")
+
+# Machine Learning Engineer
+df_ml_engineer <- df %>%
+  filter(Designation == "Machine Learning Engineer")
+```
+
+```{r}
+
+# Boxplot comparison of Salary by Designation
+ggplot(df, aes(x = Designation, y = Salary_In_SGD, fill = Designation)) +
+  geom_boxplot(outlier.shape = NA, alpha = 0.8) +
+  coord_cartesian(ylim = quantile(df$Salary_In_SGD, c(0.05, 0.95), na.rm = TRUE)) + # trim outliers for readability
+  labs(title = "Salary Comparison by Designation",
+       x = "Designation",
+       y = "Salary (in SGD)") +
+  theme_minimal() +
+  theme(legend.position = "none",
+        axis.text.x = element_text(angle = 20, hjust = 1))
+```
+
+```{r}
+
+table(df$Designation, df$Experience)
+```
+
+```{r}
+df_combined <- bind_rows(
+  df_data_scientist,
+  df_data_engineer,
+  df_data_analyst,
+  df_ml_engineer
+)
+
+df_combined
+table(df_combined$Designation)
+```
+
+```{r}
+anova_result <- aov(Salary_In_SGD ~ Designation, data = df_combined)
+summary(anova_result)
+```
+
+```{r}
+# Run Two-Way ANOVA with interaction
+two_way_anova <- aov(Salary_In_SGD ~ Designation * Experience, data = df_combined)
+summary(two_way_anova)
+```
+
+```{r}
+# Define colors and line styles
+colors <- brewer.pal(4, "Set2")  # 4 pastel-distinct colors
+line_types <- 1:4                # Different line types for variety
+point_shapes <- 15:18            # Unique shapes for each role
+
+# Generate interaction plot
+interaction.plot(
+  x.factor = df_combined$Experience,
+  trace.factor = df_combined$Designation,
+  response = df_combined$Salary_In_SGD,
+  col = colors,
+  lty = line_types,
+  lwd = 2,
+  pch = point_shapes,
+  type = "b",
+  xlab = "Experience",
+  ylab = "Average Salary (SGD)",
+  main = "Interaction Plot: Experience vs Designation on Salary",
+  trace.label = "Designation"
+)
+```
+
+

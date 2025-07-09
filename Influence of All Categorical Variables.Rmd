@@ -1,0 +1,57 @@
+---
+title: "MH3511 Team Project ETA Squared"
+output: html_notebook
+---
+
+```{r}
+install.packages("effectsize")   # If not already installed
+library(effectsize)
+library(dplyr)
+```
+
+```{r}
+# Load the dataset
+df <- read.csv("/Users/choonray/MH3511/Team Project/DataScienceSalaries.csv")
+```
+
+```{r}
+# List of your categorical variables
+cat_vars <- c("Working_Year", "Designation", "Experience", 
+              "Company_Location", "Company_Size", "Remote_Working_Ratio")
+
+# Create a results list
+eta_results <- list()
+
+# Loop through each categorical variable to compute eta squared
+for (var in cat_vars) {
+  # Dynamically build formula
+  formula_str <- as.formula(paste("Salary_In_SGD ~", var))
+  
+  # Run ANOVA
+  aov_model <- aov(formula_str, data = df)  # use 'df' instead of 'df_combined'
+  
+  # Compute eta squared
+  eta_sq <- eta_squared(aov_model)
+  
+  # Store result
+  eta_results[[var]] <- eta_sq
+}
+
+# View all eta squared results
+eta_results
+```
+
+```{r}
+
+eta_df <- bind_rows(
+  lapply(names(eta_results), function(name) {
+    data.frame(Variable = name, eta_results[[name]])
+  })
+)
+
+# Round and sort nicely
+eta_df %>%
+  mutate(across(where(is.numeric), round, 4)) %>%
+  arrange(desc(Eta2))
+```
+

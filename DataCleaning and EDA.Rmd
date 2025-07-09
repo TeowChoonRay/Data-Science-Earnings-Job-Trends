@@ -10,14 +10,13 @@ This dataset aims to shed light on the salary trends in the field of Data Scienc
 
 ## Load packages
 ```{r}
-install.packages("dplyr")
 library(dplyr)
 ```
 
 ## Import Dataset
 ```{r}
 # Change Directory to Location of Dataset
-df <- read.csv("/Users/nicoleang/Downloads/Data_Science_Fields_Salary_Categorization.csv")
+df <- read.csv("/Users/choonray/MH3511/Team Project/Data_Science_Fields_Salary_Categorization.csv")
 
 # Display the first few rows
 head(df)

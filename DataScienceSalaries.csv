@@ -1,397 +1,397 @@
-"Working_Year","Designation","Experience","Employment_Status","Salary_In_SGD","Company_Location","Company_Size","Remote_Working_Ratio"
-2020,"Data Scientist","MI","FT",101636.352,"DE","L",0
-2020,"Machine Learning Engineer","SE","FT",190966.8,"US","L",50
-2020,"Data Analyst","EN","FT",91664.064,"US","L",100
-2020,"Data Scientist","MI","FT",45494.656,"HU","L",50
-2020,"Data Scientist","EN","FT",65337.376,"FR","S",0
-2020,"Data Scientist","MI","FT",51536.848,"IN","L",0
-2020,"Data Scientist","EN","FT",50817.536,"FR","M",0
-2020,"Data Analyst","MI","FT",108214.528,"US","L",100
-2020,"Data Analyst","MI","FT",10184.896,"PK","L",50
-2020,"Data Engineer","EN","FT",53074.768,"JP","S",100
-2020,"Machine Learning Engineer","MI","FT",55165.216,"CN","M",0
-2020,"Data Engineer","SE","FT",60980.784,"GR","L",50
-2020,"Data Engineer","SE","FT",42663.264,"MX","S",0
-2020,"Data Scientist","SE","FT",87116.512,"US","L",100
-2020,"Data Analyst","MI","FT",59529.44,"FR","L",50
-2020,"Data Engineer","MI","FT",94375.792,"AT","L",50
-2020,"Data Analyst","EN","FT",12731.12,"NG","S",100
-2020,"Machine Learning Engineer","EN","FT",175689.456,"US","S",100
-2020,"Data Scientist","MI","FT",58257.6,"US","S",100
-2020,"Data Engineer","MI","FT",134949.872,"US","L",100
-2020,"Data Engineer","MI","FT",143698.704,"GB","L",50
-2020,"Data Scientist","MI","FT",97976.16,"GB","S",100
-2020,"Data Engineer","SE","FT",239345.056,"US","L",100
-2020,"Data Scientist","MI","FT",133676.768,"US","L",100
-2020,"Data Engineer","MI","FT",89294.8,"FR","L",50
-2020,"Data Analyst","EN","FT",7730.336,"IN","S",0
-2020,"Data Analyst","EN","FT",115853.2,"US","L",100
-2020,"Data Engineer","EN","FT",69692.704,"DE","L",100
-2020,"Data Scientist","MI","FT",49366.192,"ES","M",100
-2020,"Data Scientist","MI","FT",150227.216,"US","M",100
-2020,"Data Scientist","SE","FT",152773.44,"US","L",50
-2020,"Data Scientist","MI","FT",176135.04,"US","M",100
-2020,"Data Engineer","MI","FT",140042.32,"US","L",100
-2020,"Data Engineer","MI","FT",166523.056,"US","M",100
-2020,"Machine Learning Engineer","SE","FT",58076.816,"HR","S",100
-2020,"Data Scientist","EN","FT",79857.216,"DE","S",50
-2020,"Data Scientist","EN","FT",62723.68,"DE","S",0
-2020,"Data Scientist","EN","FT",133676.768,"US","S",100
-2020,"Data Scientist","SE","FT",116154.912,"AT","S",0
-2020,"Data Scientist","MI","FT",79857.216,"LU","S",50
-2020,"Data Scientist","MI","FT",53721.504,"FR","S",50
-2021,"Data Scientist","SE","FT",67719.376,"FR","L",50
-2021,"Data Analyst","EN","FT",101848.96,"US","M",100
-2021,"Data Engineer","MI","FT",178235.68,"US","L",100
-2021,"Machine Learning Engineer","MI","FT",60195.28,"ES","S",100
-2021,"Data Engineer","MI","FT",36253.136,"PL","L",100
-2021,"Data Analyst","EN","FT",75243.472,"FR","M",50
-2021,"Data Analyst","SE","FT",101848.96,"US","S",100
-2021,"Data Scientist","EN","FT",37876.352,"IN","L",50
-2021,"Data Analyst","MI","FT",95483.408,"US","L",0
-2021,"Data Engineer","SE","FT",190966.8,"US","L",100
-2021,"Data Analyst","MI","FT",78932.944,"US","L",0
-2021,"Data Scientist","MI","FT",92937.184,"US","L",0
-2021,"Data Analyst","MI","FT",65589.456,"GB","L",50
-2021,"Data Engineer","SE","FT",146407.888,"US","S",100
-2021,"Data Engineer","SE","FT",190966.8,"US","M",100
-2021,"Data Engineer","EN","FT",38738.256,"IN","L",100
-2021,"Machine Learning Engineer","SE","FT",120390.56,"DE","L",50
-2021,"Data Engineer","MI","FT",57787.824,"NL","L",100
-2021,"Data Scientist","MI","FT",63655.6,"NG","L",100
-2021,"Data Analyst","EN","FT",114580.08,"US","S",100
-2021,"Data Engineer","MI","FT",254622.4,"US","L",100
-2021,"Data Analyst","EN","FT",63655.6,"US","M",100
-2021,"Data Scientist","MI","FT",12051.28,"IN","S",0
-2021,"Machine Learning Engineer","EN","FT",25462.24,"IN","S",100
-2021,"Data Scientist","EN","FT",63204.912,"FR","M",50
-2021,"Data Scientist","EN","FT",127311.2,"US","S",0
-2021,"Data Analyst","MI","FT",114580.08,"US","M",100
-2021,"Data Scientist","EN","FT",101848.96,"US","M",100
-2021,"Data Analyst","MI","FT",171870.128,"US","L",100
-2021,"Data Scientist","MI","FT",105031.744,"US","S",100
-2021,"Data Engineer","MI","FT",127311.2,"US","L",100
-2021,"Machine Learning Engineer","SE","FT",105342.384,"BE","M",50
-2021,"Data Engineer","MI","FT",114580.08,"US","L",100
-2021,"Data Scientist","MI","FT",190966.8,"US","M",100
-2021,"Data Scientist","MI","FT",96468.784,"CA","L",100
-2021,"Data Scientist","EN","FT",17059.696,"UA","L",100
-2021,"Data Scientist","MI","FT",151575.44,"IL","M",100
-2021,"Machine Learning Engineer","EN","FT",159139.008,"US","S",100
-2021,"Data Engineer","MI","FT",36116.912,"MT","L",50
-2021,"Data Engineer","EN","FT",101848.96,"US","L",100
-2021,"Data Engineer","MI","FT",105067.392,"GB","L",100
-2021,"Data Analyst","EN","FT",76386.72,"US","S",100
-2021,"Data Scientist","MI","FT",3639.824,"MX","S",0
-2021,"Data Scientist","MI","FT",50972.864,"CL","L",100
-2021,"Machine Learning Engineer","EN","FT",103122.08,"US","S",50
-2021,"Data Scientist","MI","FT",7230,"US","S",100
-2021,"Data Scientist","MI","FT",115514.544,"DE","L",50
-2021,"Data Engineer","MI","FT",33107.28,"US","L",0
-2021,"Data Engineer","MI","FT",5092.448,"IR","M",100
-2021,"Data Engineer","SE","FT",97817.008,"GB","S",50
-2021,"Machine Learning Engineer","MI","FT",94210.288,"JP","S",50
-2021,"Machine Learning Engineer","EN","FT",27809.856,"CO","M",50
-2021,"Data Scientist","MI","FT",187147.472,"US","L",50
-2021,"Machine Learning Engineer","SE","FT",30990.096,"IN","L",100
-2021,"Data Scientist","MI","FT",78254.368,"AT","M",50
-2021,"Data Scientist","MI","FT",48155.456,"ES","L",100
-2021,"Data Scientist","MI","FT",203697.92,"US","L",100
-2021,"Data Scientist","MI","FT",16424.416,"BR","S",0
-2021,"Machine Learning Engineer","SE","FT",254622.4,"US","L",100
-2021,"Data Engineer","SE","FT",210063.488,"US","M",0
-2021,"Machine Learning Engineer","MI","FT",31602.464,"SI","L",50
-2021,"Data Engineer","MI","FT",84053.408,"GB","S",50
-2021,"Machine Learning Engineer","EN","FT",31602.464,"DE","M",50
-2021,"Data Scientist","MI","FT",115514.544,"DE","L",50
-2021,"Machine Learning Engineer","MI","FT",112866.464,"BE","M",100
-2021,"Machine Learning Engineer","MI","FT",59323.2,"PL","L",100
-2021,"Data Scientist","MI","FT",148844.624,"GB","L",50
-2021,"Data Scientist","MI","FT",43041.376,"IN","M",0
-2021,"Data Scientist","MI","FT",71620.192,"GB","L",50
-2021,"Data Scientist","SE","FT",111700.304,"CA","S",100
-2021,"Data Scientist","MI","FT",112866.464,"DE","L",50
-2021,"Data Scientist","SE","FT",171870.128,"US","L",0
-2021,"Data Analyst","SE","FT",91391.616,"CA","M",100
-2021,"Data Analyst","SE","FT",254622.4,"US","L",100
-2021,"Data Scientist","MI","FT",59593.104,"ES","M",100
-2021,"Data Scientist","EN","FT",5092.448,"VN","M",0
-2021,"Data Engineer","EN","FT",27546.32,"IN","M",50
-2021,"Data Scientist","SE","FT",132010.256,"CA","L",100
-2021,"Data Analyst","MI","FT",101848.96,"US","L",100
-2021,"Data Engineer","MI","FT",140042.32,"US","L",100
-2021,"Data Scientist","SE","FT",210063.488,"US","L",100
-2021,"Data Engineer","MI","FT",91933.968,"GB","L",50
-2021,"Data Scientist","EN","FT",46650.64,"FR","L",50
-2021,"Data Engineer","MI","FT",15408.48,"TR","M",0
-2021,"Data Engineer","SE","FT",122577.776,"GB","L",50
-2021,"Data Scientist","MI","FT",146407.888,"US","L",50
-2021,"Data Scientist","EN","FT",114580.08,"US","S",100
-2021,"Data Scientist","EN","FT",36155.104,"IN","M",100
-2021,"Data Analyst","MI","FT",118399.424,"US","L",100
-2021,"Data Engineer","MI","FT",254622.4,"US","L",100
-2021,"Machine Learning Engineer","SE","FT",235525.728,"US","L",50
-2021,"Data Scientist","MI","FT",165504.56,"US","L",50
-2021,"Data Analyst","SE","FT",81264.016,"DE","L",50
-2021,"Data Scientist","MI","FT",21520.688,"IN","S",100
-2021,"Machine Learning Engineer","SE","FT",84362.768,"IN","L",0
-2021,"Data Scientist","MI","FT",32505.088,"DE","S",100
-2021,"Data Engineer","MI","FT",118590.384,"US","M",0
-2021,"Data Engineer","MI","FT",142302.096,"US","M",0
-2021,"Data Engineer","MI","FT",35667.504,"TR","M",100
-2021,"Data Engineer","EN","FT",82768.832,"DE","M",50
-2021,"Data Engineer","EN","FT",92300.624,"US","L",100
-2021,"Machine Learning Engineer","EN","FT",108214.528,"DE","S",100
-2021,"Data Scientist","SE","FT",98900.432,"FR","M",50
-2021,"Data Scientist","EN","FT",127311.2,"US","M",100
-2021,"Data Scientist","EN","FT",73840.496,"US","L",50
-2021,"Data Scientist","SE","FT",25679.936,"TR","L",50
-2021,"Data Engineer","MI","FT",142588.544,"US","L",100
-2021,"Data Scientist","MI","FT",138769.216,"US","L",50
-2021,"Machine Learning Engineer","MI","FT",65010.192,"IT","L",50
-2022,"Data Engineer","SE","FT",171870.128,"US","M",100
-2022,"Data Analyst","SE","FT",197332.368,"US","M",100
-2022,"Data Analyst","SE","FT",153537.312,"US","M",100
-2022,"Data Scientist","MI","FT",165504.56,"US","M",0
-2022,"Data Scientist","MI","FT",114580.08,"US","M",0
-2022,"Data Engineer","MI","FT",216429.04,"US","M",100
-2022,"Data Engineer","MI","FT",190966.8,"US","M",100
-2022,"Data Analyst","SE","FT",129984.736,"US","M",100
-2022,"Data Analyst","SE","FT",108087.216,"US","M",100
-2022,"Data Scientist","SE","FT",173932.56,"US","M",100
-2022,"Data Scientist","SE","FT",126496.416,"US","M",100
-2022,"Data Scientist","SE","FT",149958.592,"GB","M",0
-2022,"Data Scientist","SE","FT",133297.376,"GB","M",0
-2022,"Data Scientist","SE","FT",185874.352,"US","M",100
-2022,"Data Scientist","SE","FT",156592.784,"US","M",100
-2022,"Data Engineer","EN","FT",66648.688,"GB","M",100
-2022,"Data Analyst","SE","FT",126038.096,"US","M",0
-2022,"Data Analyst","SE","FT",147680.992,"US","M",0
-2022,"Data Analyst","MI","FT",135280.88,"US","M",0
-2022,"Data Analyst","MI","FT",161048.672,"US","M",0
-2022,"Data Scientist","MI","FT",83309.904,"GB","M",0
-2022,"Data Scientist","MI","FT",49986.192,"GB","M",0
-2022,"Data Engineer","MI","FT",99972.4,"GB","M",0
-2022,"Data Engineer","MI","FT",66648.688,"GB","M",0
-2022,"Data Scientist","SE","FT",210343.568,"US","M",100
-2022,"Data Engineer","EN","FT",58317.44,"GB","M",100
-2022,"Data Scientist","SE","FT",152977.136,"US","M",100
-2022,"Data Analyst","SE","FT",114987.472,"US","M",100
-2022,"Data Engineer","SE","FT",231630,"US","M",0
-2022,"Data Engineer","SE","FT",168458.176,"US","M",0
-2022,"Data Engineer","SE","FT",280224.688,"US","M",0
-2022,"Data Engineer","SE","FT",203799.776,"US","M",0
-2022,"Data Scientist","SE","FT",229160.16,"US","L",0
-2022,"Data Scientist","SE","FT",152773.44,"US","L",0
-2022,"Data Analyst","SE","FT",158107.776,"US","M",100
-2022,"Data Analyst","SE","FT",216429.04,"US","M",100
-2022,"Data Analyst","MI","FT",147044.432,"US","M",100
-2022,"Data Analyst","SE","FT",143734.352,"US","M",100
-2022,"Data Analyst","SE","FT",114987.472,"US","M",100
-2022,"Data Analyst","SE","FT",143734.352,"US","M",100
-2022,"Data Analyst","SE","FT",114987.472,"US","M",100
-2022,"Data Engineer","SE","FT",210572.72,"US","M",100
-2022,"Data Engineer","SE","FT",168458.176,"US","M",100
-2022,"Data Analyst","MI","FT",212609.712,"US","M",100
-2022,"Data Analyst","SE","FT",173907.104,"US","M",100
-2022,"Data Analyst","SE","FT",139125.68,"US","M",100
-2022,"Data Engineer","SE","FT",164072.304,"US","M",100
-2022,"Data Engineer","SE","FT",119290.592,"US","M",100
-2022,"Data Engineer","SE","FT",199369.344,"US","M",100
-2022,"Data Engineer","SE","FT",138514.592,"US","M",0
-2022,"Data Scientist","SE","FT",121645.856,"US","M",0
-2022,"Data Engineer","SE","FT",143861.664,"US","L",0
-2022,"Data Analyst","SE","FT",171870.128,"US","M",100
-2022,"Data Scientist","SE","FT",212609.712,"US","M",100
-2022,"Data Scientist","SE","FT",156592.784,"US","M",100
-2022,"Data Engineer","SE","FT",99972.4,"GB","M",0
-2022,"Data Engineer","SE","FT",83309.904,"GB","M",0
-2022,"Data Scientist","SE","FT",190966.8,"US","M",0
-2022,"Data Scientist","SE","FT",269263.184,"US","M",100
-2022,"Data Analyst","SE","FT",165504.56,"CA","M",100
-2022,"Data Analyst","SE","FT",78041.76,"CA","M",100
-2022,"Data Analyst","SE","FT",165504.56,"CA","M",100
-2022,"Data Analyst","SE","FT",78041.76,"CA","M",100
-2022,"Data Engineer","SE","FT",203697.92,"US","L",0
-2022,"Data Scientist","SE","FT",176453.328,"US","M",100
-2022,"Data Engineer","SE","FT",173143.232,"US","M",0
-2022,"Data Analyst","MI","FT",73840.496,"US","S",0
-2022,"Data Scientist","SE","FT",216429.04,"US","M",100
-2022,"Data Scientist","SE","FT",156592.784,"US","M",100
-2022,"Machine Learning Engineer","SE","FT",241445.696,"US","M",0
-2022,"Machine Learning Engineer","SE","FT",210058.384,"US","M",0
-2022,"Data Analyst","SE","FT",168050.784,"US","M",0
-2022,"Data Engineer","SE","FT",210572.72,"US","M",100
-2022,"Data Engineer","SE","FT",174408.704,"US","M",100
-2022,"Data Engineer","SE","FT",129309.984,"US","M",100
-2022,"Data Analyst","SE","FT",164072.304,"US","M",100
-2022,"Data Analyst","SE","FT",119290.592,"US","M",100
-2022,"Data Engineer","SE","FT",168458.176,"US","M",100
-2022,"Machine Learning Engineer","EN","FT",47487.072,"GB","L",100
-2022,"Data Analyst","SE","FT",208790.368,"US","M",0
-2022,"Data Engineer","SE","FT",197332.368,"US","M",100
-2022,"Machine Learning Engineer","MI","FT",158289.84,"GB","M",0
-2022,"Machine Learning Engineer","MI","FT",124966.128,"GB","M",0
-2022,"Data Analyst","SE","FT",143734.352,"US","M",100
-2022,"Data Analyst","SE","FT",114987.472,"US","M",100
-2022,"Machine Learning Engineer","MI","FT",111947.28,"DE","M",100
-2022,"Data Engineer","MI","FT",149958.592,"GB","M",0
-2022,"Data Scientist","SE","FT",274101.008,"US","L",100
-2022,"Data Scientist","SE","FT",201406.32,"US","L",100
-2022,"Data Engineer","SE","FT",266207.712,"US","L",100
-2022,"Data Engineer","SE","FT",196823.12,"US","L",100
-2022,"Data Analyst","SE","FT",147596.96,"US","M",0
-2022,"Data Analyst","SE","FT",103969.968,"US","M",0
-2022,"Data Engineer","SE","FT",222794.608,"US","M",100
-2022,"Data Engineer","MI","FT",124966.128,"GB","M",0
-2022,"Data Analyst","MI","FT",73840.496,"US","S",0
-2022,"Data Engineer","SE","FT",233743.36,"US","L",100
-2022,"Data Analyst","MI","FT",66648.688,"GB","M",100
-2022,"Data Scientist","SE","FT",229160.16,"US","M",100
-2022,"Data Scientist","MI","FT",91641.152,"GB","M",0
-2022,"Data Scientist","MI","FT",58317.44,"GB","M",0
-2022,"Data Engineer","MI","FT",83960.464,"GR","M",100
-2022,"Data Engineer","MI","FT",62969.392,"GR","M",100
-2022,"Data Engineer","MI","FT",99972.4,"GB","M",100
-2022,"Data Engineer","MI","FT",74978.656,"GB","M",100
-2022,"Data Engineer","MI","FT",81351.856,"US","M",0
-2022,"Data Scientist","SE","FT",229160.16,"US","M",0
-2022,"Data Scientist","SE","FT",101848.96,"US","M",0
-2022,"Data Engineer","MI","FT",105540.992,"US","M",0
-2022,"Data Engineer","SE","FT",128329.696,"US","L",100
-2022,"Data Engineer","MI","FT",62969.392,"ES","M",100
-2022,"Data Scientist","SE","FT",178744.928,"US","L",0
-2022,"Data Analyst","MI","FT",49986.192,"GB","M",100
-2022,"Data Analyst","MI","FT",55973.648,"ES","M",100
-2022,"Data Analyst","MI","FT",41979.6,"ES","M",100
-2022,"Data Engineer","MI","FT",111947.28,"ES","M",100
-2022,"Data Engineer","MI","FT",97953.232,"ES","M",100
-2022,"Data Engineer","MI","FT",133297.376,"GB","M",100
-2022,"Data Engineer","MI","FT",116634.88,"GB","M",100
-2022,"Data Engineer","MI","FT",83960.464,"ES","M",100
-2022,"Data Engineer","MI","FT",111947.28,"GR","M",100
-2022,"Machine Learning Engineer","SE","FT",241445.696,"US","M",0
-2022,"Machine Learning Engineer","SE","FT",210058.384,"US","M",0
-2022,"Data Analyst","MI","FT",55973.648,"GR","M",100
-2022,"Data Analyst","MI","FT",41979.6,"GR","M",100
-2022,"Data Engineer","MI","FT",124966.128,"GB","M",100
-2022,"Data Engineer","MI","FT",99972.4,"GB","M",100
-2022,"Data Scientist","SE","FT",274101.008,"US","L",0
-2022,"Data Engineer","MI","FT",97953.232,"GR","M",100
-2022,"Data Engineer","SE","FT",266207.712,"US","L",100
-2022,"Data Engineer","SE","FT",196823.12,"US","L",100
-2022,"Data Engineer","SE","FT",229160.16,"US","M",100
-2022,"Data Engineer","SE","FT",101848.96,"US","M",100
-2022,"Machine Learning Engineer","MI","FT",152773.44,"US","S",100
-2022,"Data Engineer","SE","FT",133676.768,"US","M",100
-2022,"Data Scientist","MI","FT",40249.44,"IN","L",100
-2022,"Data Scientist","EN","FT",23478.736,"IN","M",100
-2022,"Data Engineer","EN","FT",152773.44,"US","M",100
-2022,"Data Scientist","SE","FT",133536.72,"US","M",100
-2022,"Data Engineer","SE","FT",127311.2,"US","M",100
-2022,"Data Scientist","SE","FT",178235.68,"US","M",100
-2022,"Data Analyst","MI","FT",171870.128,"US","M",100
-2022,"Data Analyst","MI","FT",63655.6,"US","M",100
-2022,"Data Scientist","SE","FT",280084.64,"US","M",100
-2022,"Data Scientist","SE","FT",178235.68,"US","M",100
-2022,"Data Scientist","MI","FT",233269.76,"GB","M",0
-2022,"Data Scientist","MI","FT",116634.88,"GB","M",0
-2022,"Data Scientist","SE","FT",235653.024,"US","M",100
-2022,"Machine Learning Engineer","SE","FT",280084.64,"US","M",100
-2022,"Data Scientist","MI","FT",254622.4,"US","M",100
-2022,"Data Scientist","MI","FT",152773.44,"US","M",100
-2022,"Machine Learning Engineer","SE","FT",152773.44,"AE","S",100
-2022,"Machine Learning Engineer","SE","FT",82752.288,"AE","S",100
-2022,"Data Engineer","SE","FT",267353.52,"US","M",100
-2022,"Machine Learning Engineer","SE","FT",152773.44,"US","M",100
-2022,"Data Scientist","SE","FT",292815.76,"US","M",100
-2022,"Data Scientist","MI","FT",45310.064,"PL","L",100
-2022,"Data Scientist","SE","FT",127311.2,"US","M",100
-2022,"Data Engineer","EN","FT",73885.056,"DE","M",100
-2022,"Data Scientist","SE","FT",210063.488,"US","M",100
-2022,"Data Scientist","EN","FT",66705.984,"CA","L",100
-2022,"Machine Learning Engineer","SE","FT",79761.744,"NL","L",100
-2022,"Data Scientist","EN","FT",50924.48,"MY","L",100
-2022,"Machine Learning Engineer","MI","FT",111301.824,"AU","L",100
-2022,"Data Engineer","SE","FT",146407.888,"US","M",100
-2022,"Data Scientist","EN","FT",110382.624,"AU","M",50
-2022,"Data Engineer","EN","FT",82752.288,"US","S",100
-2022,"Machine Learning Engineer","SE","FT",90956.208,"IE","S",100
-2022,"Data Scientist","MI","FT",61109.376,"US","S",100
-2022,"Data Engineer","MI","FT",86758.768,"FR","M",100
-2022,"Data Scientist","MI","FT",155760.16,"CH","L",0
-2022,"Data Scientist","MI","FT",88272.496,"CA","M",100
-2022,"Data Analyst","MI","FT",25462.24,"GR","S",100
-2022,"Data Scientist","MI","FT",171870.128,"US","L",100
-2022,"Data Scientist","MI","FT",99302.736,"US","M",100
-2022,"Data Analyst","SE","FT",171870.128,"US","M",100
-2022,"Data Analyst","SE","FT",127311.2,"US","M",100
-2022,"Data Analyst","SE","FT",114987.472,"US","M",100
-2022,"Data Analyst","MI","FT",108214.528,"CA","M",0
-2022,"Data Analyst","MI","FT",95483.408,"CA","M",0
-2022,"Machine Learning Engineer","SE","FT",272445.968,"US","M",100
-2022,"Machine Learning Engineer","SE","FT",245201.376,"US","M",100
-2022,"Data Analyst","SE","FT",143734.352,"US","M",100
-2022,"Data Engineer","SE","FT",197332.368,"US","M",100
-2022,"Data Scientist","MI","FT",179890.72,"US","M",0
-2022,"Data Scientist","MI","FT",129984.736,"US","M",0
-2022,"Data Analyst","SE","FT",147596.96,"US","M",100
-2022,"Data Analyst","SE","FT",103969.968,"US","M",100
-2022,"Data Engineer","MI","FT",263150.976,"US","M",0
-2022,"Data Engineer","MI","FT",126165.392,"US","M",0
-2022,"Data Engineer","SE","FT",165504.56,"US","M",100
-2022,"Data Engineer","SE","FT",146407.888,"US","M",100
-2022,"Data Engineer","SE","FT",140678.88,"US","M",100
-2022,"Data Engineer","SE","FT",165504.56,"US","M",100
-2022,"Data Analyst","SE","FT",126101.744,"US","M",100
-2022,"Data Engineer","SE","FT",203697.92,"US","M",100
-2022,"Data Scientist","SE","FT",261369.888,"US","L",0
-2022,"Data Scientist","SE","FT",178744.928,"US","L",0
-2022,"Data Scientist","SE","FT",224067.712,"US","M",100
-2022,"Data Scientist","SE","FT",183328.128,"US","M",100
-2022,"Data Engineer","SE","FT",254749.712,"US","M",100
-2022,"Data Engineer","SE","FT",203697.92,"US","M",100
-2022,"Data Engineer","SE","FT",184601.248,"US","M",100
-2022,"Data Engineer","SE","FT",89754.4,"US","M",0
-2022,"Data Scientist","SE","FT",261369.888,"US","M",0
-2022,"Data Scientist","SE","FT",178744.928,"US","M",0
-2022,"Data Engineer","SE","FT",222921.904,"US","M",100
-2022,"Data Engineer","SE","FT",178553.952,"US","M",100
-2022,"Data Analyst","SE","FT",147871.952,"US","M",100
-2022,"Data Engineer","SE","FT",68748.048,"US","M",0
-2022,"Data Analyst","SE","FT",216429.04,"US","M",100
-2022,"Data Analyst","MI","FT",83309.904,"GB","M",0
-2022,"Data Analyst","SE","FT",101848.96,"US","M",100
-2022,"Data Scientist","SE","FT",178235.68,"US","M",100
-2022,"Data Scientist","SE","FT",267353.52,"US","M",100
-2022,"Data Scientist","SE","FT",178235.68,"US","M",100
-2022,"Data Analyst","SE","FT",127311.2,"US","M",100
-2022,"Data Analyst","SE","FT",87844.736,"US","M",100
-2022,"Data Scientist","SE","FT",267353.52,"US","M",100
-2022,"Data Scientist","SE","FT",178235.68,"US","M",100
-2022,"Data Scientist","SE","FT",267353.52,"US","M",100
-2022,"Data Analyst","SE","FT",191062.288,"US","M",100
-2022,"Data Engineer","SE","FT",127311.2,"US","M",100
-2022,"Data Engineer","SE","FT",31827.808,"US","M",100
-2022,"Data Analyst","SE","FT",161048.672,"US","M",100
-2022,"Data Analyst","SE","FT",135280.88,"US","M",100
-2022,"Data Engineer","SE","FT",280224.688,"US","M",100
-2022,"Data Engineer","SE","FT",203799.776,"US","M",100
-2022,"Data Analyst","SE","FT",133676.768,"US","M",100
-2022,"Data Analyst","SE","FT",141219.952,"US","M",100
-2022,"Data Analyst","MI","FT",58317.44,"GB","M",0
-2022,"Data Scientist","SE","FT",178235.68,"US","M",100
-2022,"Data Analyst","SE","FT",126038.096,"US","M",0
-2022,"Data Analyst","SE","FT",76386.72,"US","M",100
-2022,"Data Scientist","SE","FT",292815.76,"US","M",100
-2022,"Data Scientist","SE","FT",190966.8,"US","M",100
-2022,"Data Scientist","SE","FT",267353.52,"US","M",100
-2022,"Data Analyst","SE","FT",216429.04,"US","M",100
-2022,"Data Scientist","MI","FT",203697.92,"US","M",100
-2022,"Data Scientist","MI","FT",165504.56,"US","M",100
-2022,"Data Analyst","EN","FT",85298.512,"CA","M",0
-2022,"Data Analyst","EN","FT",66201.824,"CA","M",0
-2022,"Data Engineer","SE","FT",196059.248,"US","M",100
-2022,"Data Engineer","SE","FT",160412.112,"US","M",100
-2022,"Data Analyst","SE","FT",164231.456,"US","M",0
-2022,"Data Analyst","SE","FT",190966.8,"US","M",100
+Working_Year,Designation,Experience,Employment_Status,Salary_In_SGD,Company_Location,Company_Size,Remote_Working_Ratio
+2020,Data Scientist,MI,FT,101636.352,DE,L,0
+2020,Machine Learning Engineer,SE,FT,190966.8,US,L,50
+2020,Data Analyst,EN,FT,91664.064,US,L,100
+2020,Data Scientist,MI,FT,45494.656,HU,L,50
+2020,Data Scientist,EN,FT,65337.376,FR,S,0
+2020,Data Scientist,MI,FT,51536.848,IN,L,0
+2020,Data Scientist,EN,FT,50817.536,FR,M,0
+2020,Data Analyst,MI,FT,108214.528,US,L,100
+2020,Data Analyst,MI,FT,10184.896,PK,L,50
+2020,Data Engineer,EN,FT,53074.768,JP,S,100
+2020,Machine Learning Engineer,MI,FT,55165.216,CN,M,0
+2020,Data Engineer,SE,FT,60980.784,GR,L,50
+2020,Data Engineer,SE,FT,42663.264,MX,S,0
+2020,Data Scientist,SE,FT,87116.512,US,L,100
+2020,Data Analyst,MI,FT,59529.44,FR,L,50
+2020,Data Engineer,MI,FT,94375.792,AT,L,50
+2020,Data Analyst,EN,FT,12731.12,NG,S,100
+2020,Machine Learning Engineer,EN,FT,175689.456,US,S,100
+2020,Data Scientist,MI,FT,58257.6,US,S,100
+2020,Data Engineer,MI,FT,134949.872,US,L,100
+2020,Data Engineer,MI,FT,143698.704,GB,L,50
+2020,Data Scientist,MI,FT,97976.16,GB,S,100
+2020,Data Engineer,SE,FT,239345.056,US,L,100
+2020,Data Scientist,MI,FT,133676.768,US,L,100
+2020,Data Engineer,MI,FT,89294.8,FR,L,50
+2020,Data Analyst,EN,FT,7730.336,IN,S,0
+2020,Data Analyst,EN,FT,115853.2,US,L,100
+2020,Data Engineer,EN,FT,69692.704,DE,L,100
+2020,Data Scientist,MI,FT,49366.192,ES,M,100
+2020,Data Scientist,MI,FT,150227.216,US,M,100
+2020,Data Scientist,SE,FT,152773.44,US,L,50
+2020,Data Scientist,MI,FT,176135.04,US,M,100
+2020,Data Engineer,MI,FT,140042.32,US,L,100
+2020,Data Engineer,MI,FT,166523.056,US,M,100
+2020,Machine Learning Engineer,SE,FT,58076.816,HR,S,100
+2020,Data Scientist,EN,FT,79857.216,DE,S,50
+2020,Data Scientist,EN,FT,62723.68,DE,S,0
+2020,Data Scientist,EN,FT,133676.768,US,S,100
+2020,Data Scientist,SE,FT,116154.912,AT,S,0
+2020,Data Scientist,MI,FT,79857.216,LU,S,50
+2020,Data Scientist,MI,FT,53721.504,FR,S,50
+2021,Data Scientist,SE,FT,67719.376,FR,L,50
+2021,Data Analyst,EN,FT,101848.96,US,M,100
+2021,Data Engineer,MI,FT,178235.68,US,L,100
+2021,Machine Learning Engineer,MI,FT,60195.28,ES,S,100
+2021,Data Engineer,MI,FT,36253.136,PL,L,100
+2021,Data Analyst,EN,FT,75243.472,FR,M,50
+2021,Data Analyst,SE,FT,101848.96,US,S,100
+2021,Data Scientist,EN,FT,37876.352,IN,L,50
+2021,Data Analyst,MI,FT,95483.408,US,L,0
+2021,Data Engineer,SE,FT,190966.8,US,L,100
+2021,Data Analyst,MI,FT,78932.944,US,L,0
+2021,Data Scientist,MI,FT,92937.184,US,L,0
+2021,Data Analyst,MI,FT,65589.456,GB,L,50
+2021,Data Engineer,SE,FT,146407.888,US,S,100
+2021,Data Engineer,SE,FT,190966.8,US,M,100
+2021,Data Engineer,EN,FT,38738.256,IN,L,100
+2021,Machine Learning Engineer,SE,FT,120390.56,DE,L,50
+2021,Data Engineer,MI,FT,57787.824,NL,L,100
+2021,Data Scientist,MI,FT,63655.6,NG,L,100
+2021,Data Analyst,EN,FT,114580.08,US,S,100
+2021,Data Engineer,MI,FT,254622.4,US,L,100
+2021,Data Analyst,EN,FT,63655.6,US,M,100
+2021,Data Scientist,MI,FT,12051.28,IN,S,0
+2021,Machine Learning Engineer,EN,FT,25462.24,IN,S,100
+2021,Data Scientist,EN,FT,63204.912,FR,M,50
+2021,Data Scientist,EN,FT,127311.2,US,S,0
+2021,Data Analyst,MI,FT,114580.08,US,M,100
+2021,Data Scientist,EN,FT,101848.96,US,M,100
+2021,Data Analyst,MI,FT,171870.128,US,L,100
+2021,Data Scientist,MI,FT,105031.744,US,S,100
+2021,Data Engineer,MI,FT,127311.2,US,L,100
+2021,Machine Learning Engineer,SE,FT,105342.384,BE,M,50
+2021,Data Engineer,MI,FT,114580.08,US,L,100
+2021,Data Scientist,MI,FT,190966.8,US,M,100
+2021,Data Scientist,MI,FT,96468.784,CA,L,100
+2021,Data Scientist,EN,FT,17059.696,UA,L,100
+2021,Data Scientist,MI,FT,151575.44,IL,M,100
+2021,Machine Learning Engineer,EN,FT,159139.008,US,S,100
+2021,Data Engineer,MI,FT,36116.912,MT,L,50
+2021,Data Engineer,EN,FT,101848.96,US,L,100
+2021,Data Engineer,MI,FT,105067.392,GB,L,100
+2021,Data Analyst,EN,FT,76386.72,US,S,100
+2021,Data Scientist,MI,FT,3639.824,MX,S,0
+2021,Data Scientist,MI,FT,50972.864,CL,L,100
+2021,Machine Learning Engineer,EN,FT,103122.08,US,S,50
+2021,Data Scientist,MI,FT,7230,US,S,100
+2021,Data Scientist,MI,FT,115514.544,DE,L,50
+2021,Data Engineer,MI,FT,33107.28,US,L,0
+2021,Data Engineer,MI,FT,5092.448,IR,M,100
+2021,Data Engineer,SE,FT,97817.008,GB,S,50
+2021,Machine Learning Engineer,MI,FT,94210.288,JP,S,50
+2021,Machine Learning Engineer,EN,FT,27809.856,CO,M,50
+2021,Data Scientist,MI,FT,187147.472,US,L,50
+2021,Machine Learning Engineer,SE,FT,30990.096,IN,L,100
+2021,Data Scientist,MI,FT,78254.368,AT,M,50
+2021,Data Scientist,MI,FT,48155.456,ES,L,100
+2021,Data Scientist,MI,FT,203697.92,US,L,100
+2021,Data Scientist,MI,FT,16424.416,BR,S,0
+2021,Machine Learning Engineer,SE,FT,254622.4,US,L,100
+2021,Data Engineer,SE,FT,210063.488,US,M,0
+2021,Machine Learning Engineer,MI,FT,31602.464,SI,L,50
+2021,Data Engineer,MI,FT,84053.408,GB,S,50
+2021,Machine Learning Engineer,EN,FT,31602.464,DE,M,50
+2021,Data Scientist,MI,FT,115514.544,DE,L,50
+2021,Machine Learning Engineer,MI,FT,112866.464,BE,M,100
+2021,Machine Learning Engineer,MI,FT,59323.2,PL,L,100
+2021,Data Scientist,MI,FT,148844.624,GB,L,50
+2021,Data Scientist,MI,FT,43041.376,IN,M,0
+2021,Data Scientist,MI,FT,71620.192,GB,L,50
+2021,Data Scientist,SE,FT,111700.304,CA,S,100
+2021,Data Scientist,MI,FT,112866.464,DE,L,50
+2021,Data Scientist,SE,FT,171870.128,US,L,0
+2021,Data Analyst,SE,FT,91391.616,CA,M,100
+2021,Data Analyst,SE,FT,254622.4,US,L,100
+2021,Data Scientist,MI,FT,59593.104,ES,M,100
+2021,Data Scientist,EN,FT,5092.448,VN,M,0
+2021,Data Engineer,EN,FT,27546.32,IN,M,50
+2021,Data Scientist,SE,FT,132010.256,CA,L,100
+2021,Data Analyst,MI,FT,101848.96,US,L,100
+2021,Data Engineer,MI,FT,140042.32,US,L,100
+2021,Data Scientist,SE,FT,210063.488,US,L,100
+2021,Data Engineer,MI,FT,91933.968,GB,L,50
+2021,Data Scientist,EN,FT,46650.64,FR,L,50
+2021,Data Engineer,MI,FT,15408.48,TR,M,0
+2021,Data Engineer,SE,FT,122577.776,GB,L,50
+2021,Data Scientist,MI,FT,146407.888,US,L,50
+2021,Data Scientist,EN,FT,114580.08,US,S,100
+2021,Data Scientist,EN,FT,36155.104,IN,M,100
+2021,Data Analyst,MI,FT,118399.424,US,L,100
+2021,Data Engineer,MI,FT,254622.4,US,L,100
+2021,Machine Learning Engineer,SE,FT,235525.728,US,L,50
+2021,Data Scientist,MI,FT,165504.56,US,L,50
+2021,Data Analyst,SE,FT,81264.016,DE,L,50
+2021,Data Scientist,MI,FT,21520.688,IN,S,100
+2021,Machine Learning Engineer,SE,FT,84362.768,IN,L,0
+2021,Data Scientist,MI,FT,32505.088,DE,S,100
+2021,Data Engineer,MI,FT,118590.384,US,M,0
+2021,Data Engineer,MI,FT,142302.096,US,M,0
+2021,Data Engineer,MI,FT,35667.504,TR,M,100
+2021,Data Engineer,EN,FT,82768.832,DE,M,50
+2021,Data Engineer,EN,FT,92300.624,US,L,100
+2021,Machine Learning Engineer,EN,FT,108214.528,DE,S,100
+2021,Data Scientist,SE,FT,98900.432,FR,M,50
+2021,Data Scientist,EN,FT,127311.2,US,M,100
+2021,Data Scientist,EN,FT,73840.496,US,L,50
+2021,Data Scientist,SE,FT,25679.936,TR,L,50
+2021,Data Engineer,MI,FT,142588.544,US,L,100
+2021,Data Scientist,MI,FT,138769.216,US,L,50
+2021,Machine Learning Engineer,MI,FT,65010.192,IT,L,50
+2022,Data Engineer,SE,FT,171870.128,US,M,100
+2022,Data Analyst,SE,FT,197332.368,US,M,100
+2022,Data Analyst,SE,FT,153537.312,US,M,100
+2022,Data Scientist,MI,FT,165504.56,US,M,0
+2022,Data Scientist,MI,FT,114580.08,US,M,0
+2022,Data Engineer,MI,FT,216429.04,US,M,100
+2022,Data Engineer,MI,FT,190966.8,US,M,100
+2022,Data Analyst,SE,FT,129984.736,US,M,100
+2022,Data Analyst,SE,FT,108087.216,US,M,100
+2022,Data Scientist,SE,FT,173932.56,US,M,100
+2022,Data Scientist,SE,FT,126496.416,US,M,100
+2022,Data Scientist,SE,FT,149958.592,GB,M,0
+2022,Data Scientist,SE,FT,133297.376,GB,M,0
+2022,Data Scientist,SE,FT,185874.352,US,M,100
+2022,Data Scientist,SE,FT,156592.784,US,M,100
+2022,Data Engineer,EN,FT,66648.688,GB,M,100
+2022,Data Analyst,SE,FT,126038.096,US,M,0
+2022,Data Analyst,SE,FT,147680.992,US,M,0
+2022,Data Analyst,MI,FT,135280.88,US,M,0
+2022,Data Analyst,MI,FT,161048.672,US,M,0
+2022,Data Scientist,MI,FT,83309.904,GB,M,0
+2022,Data Scientist,MI,FT,49986.192,GB,M,0
+2022,Data Engineer,MI,FT,99972.4,GB,M,0
+2022,Data Engineer,MI,FT,66648.688,GB,M,0
+2022,Data Scientist,SE,FT,210343.568,US,M,100
+2022,Data Engineer,EN,FT,58317.44,GB,M,100
+2022,Data Scientist,SE,FT,152977.136,US,M,100
+2022,Data Analyst,SE,FT,114987.472,US,M,100
+2022,Data Engineer,SE,FT,231630,US,M,0
+2022,Data Engineer,SE,FT,168458.176,US,M,0
+2022,Data Engineer,SE,FT,280224.688,US,M,0
+2022,Data Engineer,SE,FT,203799.776,US,M,0
+2022,Data Scientist,SE,FT,229160.16,US,L,0
+2022,Data Scientist,SE,FT,152773.44,US,L,0
+2022,Data Analyst,SE,FT,158107.776,US,M,100
+2022,Data Analyst,SE,FT,216429.04,US,M,100
+2022,Data Analyst,MI,FT,147044.432,US,M,100
+2022,Data Analyst,SE,FT,143734.352,US,M,100
+2022,Data Analyst,SE,FT,114987.472,US,M,100
+2022,Data Analyst,SE,FT,143734.352,US,M,100
+2022,Data Analyst,SE,FT,114987.472,US,M,100
+2022,Data Engineer,SE,FT,210572.72,US,M,100
+2022,Data Engineer,SE,FT,168458.176,US,M,100
+2022,Data Analyst,MI,FT,212609.712,US,M,100
+2022,Data Analyst,SE,FT,173907.104,US,M,100
+2022,Data Analyst,SE,FT,139125.68,US,M,100
+2022,Data Engineer,SE,FT,164072.304,US,M,100
+2022,Data Engineer,SE,FT,119290.592,US,M,100
+2022,Data Engineer,SE,FT,199369.344,US,M,100
+2022,Data Engineer,SE,FT,138514.592,US,M,0
+2022,Data Scientist,SE,FT,121645.856,US,M,0
+2022,Data Engineer,SE,FT,143861.664,US,L,0
+2022,Data Analyst,SE,FT,171870.128,US,M,100
+2022,Data Scientist,SE,FT,212609.712,US,M,100
+2022,Data Scientist,SE,FT,156592.784,US,M,100
+2022,Data Engineer,SE,FT,99972.4,GB,M,0
+2022,Data Engineer,SE,FT,83309.904,GB,M,0
+2022,Data Scientist,SE,FT,190966.8,US,M,0
+2022,Data Scientist,SE,FT,269263.184,US,M,100
+2022,Data Analyst,SE,FT,165504.56,CA,M,100
+2022,Data Analyst,SE,FT,78041.76,CA,M,100
+2022,Data Analyst,SE,FT,165504.56,CA,M,100
+2022,Data Analyst,SE,FT,78041.76,CA,M,100
+2022,Data Engineer,SE,FT,203697.92,US,L,0
+2022,Data Scientist,SE,FT,176453.328,US,M,100
+2022,Data Engineer,SE,FT,173143.232,US,M,0
+2022,Data Analyst,MI,FT,73840.496,US,S,0
+2022,Data Scientist,SE,FT,216429.04,US,M,100
+2022,Data Scientist,SE,FT,156592.784,US,M,100
+2022,Machine Learning Engineer,SE,FT,241445.696,US,M,0
+2022,Machine Learning Engineer,SE,FT,210058.384,US,M,0
+2022,Data Analyst,SE,FT,168050.784,US,M,0
+2022,Data Engineer,SE,FT,210572.72,US,M,100
+2022,Data Engineer,SE,FT,174408.704,US,M,100
+2022,Data Engineer,SE,FT,129309.984,US,M,100
+2022,Data Analyst,SE,FT,164072.304,US,M,100
+2022,Data Analyst,SE,FT,119290.592,US,M,100
+2022,Data Engineer,SE,FT,168458.176,US,M,100
+2022,Machine Learning Engineer,EN,FT,47487.072,GB,L,100
+2022,Data Analyst,SE,FT,208790.368,US,M,0
+2022,Data Engineer,SE,FT,197332.368,US,M,100
+2022,Machine Learning Engineer,MI,FT,158289.84,GB,M,0
+2022,Machine Learning Engineer,MI,FT,124966.128,GB,M,0
+2022,Data Analyst,SE,FT,143734.352,US,M,100
+2022,Data Analyst,SE,FT,114987.472,US,M,100
+2022,Machine Learning Engineer,MI,FT,111947.28,DE,M,100
+2022,Data Engineer,MI,FT,149958.592,GB,M,0
+2022,Data Scientist,SE,FT,274101.008,US,L,100
+2022,Data Scientist,SE,FT,201406.32,US,L,100
+2022,Data Engineer,SE,FT,266207.712,US,L,100
+2022,Data Engineer,SE,FT,196823.12,US,L,100
+2022,Data Analyst,SE,FT,147596.96,US,M,0
+2022,Data Analyst,SE,FT,103969.968,US,M,0
+2022,Data Engineer,SE,FT,222794.608,US,M,100
+2022,Data Engineer,MI,FT,124966.128,GB,M,0
+2022,Data Analyst,MI,FT,73840.496,US,S,0
+2022,Data Engineer,SE,FT,233743.36,US,L,100
+2022,Data Analyst,MI,FT,66648.688,GB,M,100
+2022,Data Scientist,SE,FT,229160.16,US,M,100
+2022,Data Scientist,MI,FT,91641.152,GB,M,0
+2022,Data Scientist,MI,FT,58317.44,GB,M,0
+2022,Data Engineer,MI,FT,83960.464,GR,M,100
+2022,Data Engineer,MI,FT,62969.392,GR,M,100
+2022,Data Engineer,MI,FT,99972.4,GB,M,100
+2022,Data Engineer,MI,FT,74978.656,GB,M,100
+2022,Data Engineer,MI,FT,81351.856,US,M,0
+2022,Data Scientist,SE,FT,229160.16,US,M,0
+2022,Data Scientist,SE,FT,101848.96,US,M,0
+2022,Data Engineer,MI,FT,105540.992,US,M,0
+2022,Data Engineer,SE,FT,128329.696,US,L,100
+2022,Data Engineer,MI,FT,62969.392,ES,M,100
+2022,Data Scientist,SE,FT,178744.928,US,L,0
+2022,Data Analyst,MI,FT,49986.192,GB,M,100
+2022,Data Analyst,MI,FT,55973.648,ES,M,100
+2022,Data Analyst,MI,FT,41979.6,ES,M,100
+2022,Data Engineer,MI,FT,111947.28,ES,M,100
+2022,Data Engineer,MI,FT,97953.232,ES,M,100
+2022,Data Engineer,MI,FT,133297.376,GB,M,100
+2022,Data Engineer,MI,FT,116634.88,GB,M,100
+2022,Data Engineer,MI,FT,83960.464,ES,M,100
+2022,Data Engineer,MI,FT,111947.28,GR,M,100
+2022,Machine Learning Engineer,SE,FT,241445.696,US,M,0
+2022,Machine Learning Engineer,SE,FT,210058.384,US,M,0
+2022,Data Analyst,MI,FT,55973.648,GR,M,100
+2022,Data Analyst,MI,FT,41979.6,GR,M,100
+2022,Data Engineer,MI,FT,124966.128,GB,M,100
+2022,Data Engineer,MI,FT,99972.4,GB,M,100
+2022,Data Scientist,SE,FT,274101.008,US,L,0
+2022,Data Engineer,MI,FT,97953.232,GR,M,100
+2022,Data Engineer,SE,FT,266207.712,US,L,100
+2022,Data Engineer,SE,FT,196823.12,US,L,100
+2022,Data Engineer,SE,FT,229160.16,US,M,100
+2022,Data Engineer,SE,FT,101848.96,US,M,100
+2022,Machine Learning Engineer,MI,FT,152773.44,US,S,100
+2022,Data Engineer,SE,FT,133676.768,US,M,100
+2022,Data Scientist,MI,FT,40249.44,IN,L,100
+2022,Data Scientist,EN,FT,23478.736,IN,M,100
+2022,Data Engineer,EN,FT,152773.44,US,M,100
+2022,Data Scientist,SE,FT,133536.72,US,M,100
+2022,Data Engineer,SE,FT,127311.2,US,M,100
+2022,Data Scientist,SE,FT,178235.68,US,M,100
+2022,Data Analyst,MI,FT,171870.128,US,M,100
+2022,Data Analyst,MI,FT,63655.6,US,M,100
+2022,Data Scientist,SE,FT,280084.64,US,M,100
+2022,Data Scientist,SE,FT,178235.68,US,M,100
+2022,Data Scientist,MI,FT,233269.76,GB,M,0
+2022,Data Scientist,MI,FT,116634.88,GB,M,0
+2022,Data Scientist,SE,FT,235653.024,US,M,100
+2022,Machine Learning Engineer,SE,FT,280084.64,US,M,100
+2022,Data Scientist,MI,FT,254622.4,US,M,100
+2022,Data Scientist,MI,FT,152773.44,US,M,100
+2022,Machine Learning Engineer,SE,FT,152773.44,AE,S,100
+2022,Machine Learning Engineer,SE,FT,82752.288,AE,S,100
+2022,Data Engineer,SE,FT,267353.52,US,M,100
+2022,Machine Learning Engineer,SE,FT,152773.44,US,M,100
+2022,Data Scientist,SE,FT,292815.76,US,M,100
+2022,Data Scientist,MI,FT,45310.064,PL,L,100
+2022,Data Scientist,SE,FT,127311.2,US,M,100
+2022,Data Engineer,EN,FT,73885.056,DE,M,100
+2022,Data Scientist,SE,FT,210063.488,US,M,100
+2022,Data Scientist,EN,FT,66705.984,CA,L,100
+2022,Machine Learning Engineer,SE,FT,79761.744,NL,L,100
+2022,Data Scientist,EN,FT,50924.48,MY,L,100
+2022,Machine Learning Engineer,MI,FT,111301.824,AU,L,100
+2022,Data Engineer,SE,FT,146407.888,US,M,100
+2022,Data Scientist,EN,FT,110382.624,AU,M,50
+2022,Data Engineer,EN,FT,82752.288,US,S,100
+2022,Machine Learning Engineer,SE,FT,90956.208,IE,S,100
+2022,Data Scientist,MI,FT,61109.376,US,S,100
+2022,Data Engineer,MI,FT,86758.768,FR,M,100
+2022,Data Scientist,MI,FT,155760.16,CH,L,0
+2022,Data Scientist,MI,FT,88272.496,CA,M,100
+2022,Data Analyst,MI,FT,25462.24,GR,S,100
+2022,Data Scientist,MI,FT,171870.128,US,L,100
+2022,Data Scientist,MI,FT,99302.736,US,M,100
+2022,Data Analyst,SE,FT,171870.128,US,M,100
+2022,Data Analyst,SE,FT,127311.2,US,M,100
+2022,Data Analyst,SE,FT,114987.472,US,M,100
+2022,Data Analyst,MI,FT,108214.528,CA,M,0
+2022,Data Analyst,MI,FT,95483.408,CA,M,0
+2022,Machine Learning Engineer,SE,FT,272445.968,US,M,100
+2022,Machine Learning Engineer,SE,FT,245201.376,US,M,100
+2022,Data Analyst,SE,FT,143734.352,US,M,100
+2022,Data Engineer,SE,FT,197332.368,US,M,100
+2022,Data Scientist,MI,FT,179890.72,US,M,0
+2022,Data Scientist,MI,FT,129984.736,US,M,0
+2022,Data Analyst,SE,FT,147596.96,US,M,100
+2022,Data Analyst,SE,FT,103969.968,US,M,100
+2022,Data Engineer,MI,FT,263150.976,US,M,0
+2022,Data Engineer,MI,FT,126165.392,US,M,0
+2022,Data Engineer,SE,FT,165504.56,US,M,100
+2022,Data Engineer,SE,FT,146407.888,US,M,100
+2022,Data Engineer,SE,FT,140678.88,US,M,100
+2022,Data Engineer,SE,FT,165504.56,US,M,100
+2022,Data Analyst,SE,FT,126101.744,US,M,100
+2022,Data Engineer,SE,FT,203697.92,US,M,100
+2022,Data Scientist,SE,FT,261369.888,US,L,0
+2022,Data Scientist,SE,FT,178744.928,US,L,0
+2022,Data Scientist,SE,FT,224067.712,US,M,100
+2022,Data Scientist,SE,FT,183328.128,US,M,100
+2022,Data Engineer,SE,FT,254749.712,US,M,100
+2022,Data Engineer,SE,FT,203697.92,US,M,100
+2022,Data Engineer,SE,FT,184601.248,US,M,100
+2022,Data Engineer,SE,FT,89754.4,US,M,0
+2022,Data Scientist,SE,FT,261369.888,US,M,0
+2022,Data Scientist,SE,FT,178744.928,US,M,0
+2022,Data Engineer,SE,FT,222921.904,US,M,100
+2022,Data Engineer,SE,FT,178553.952,US,M,100
+2022,Data Analyst,SE,FT,147871.952,US,M,100
+2022,Data Engineer,SE,FT,68748.048,US,M,0
+2022,Data Analyst,SE,FT,216429.04,US,M,100
+2022,Data Analyst,MI,FT,83309.904,GB,M,0
+2022,Data Analyst,SE,FT,101848.96,US,M,100
+2022,Data Scientist,SE,FT,178235.68,US,M,100
+2022,Data Scientist,SE,FT,267353.52,US,M,100
+2022,Data Scientist,SE,FT,178235.68,US,M,100
+2022,Data Analyst,SE,FT,127311.2,US,M,100
+2022,Data Analyst,SE,FT,87844.736,US,M,100
+2022,Data Scientist,SE,FT,267353.52,US,M,100
+2022,Data Scientist,SE,FT,178235.68,US,M,100
+2022,Data Scientist,SE,FT,267353.52,US,M,100
+2022,Data Analyst,SE,FT,191062.288,US,M,100
+2022,Data Engineer,SE,FT,127311.2,US,M,100
+2022,Data Engineer,SE,FT,31827.808,US,M,100
+2022,Data Analyst,SE,FT,161048.672,US,M,100
+2022,Data Analyst,SE,FT,135280.88,US,M,100
+2022,Data Engineer,SE,FT,280224.688,US,M,100
+2022,Data Engineer,SE,FT,203799.776,US,M,100
+2022,Data Analyst,SE,FT,133676.768,US,M,100
+2022,Data Analyst,SE,FT,141219.952,US,M,100
+2022,Data Analyst,MI,FT,58317.44,GB,M,0
+2022,Data Scientist,SE,FT,178235.68,US,M,100
+2022,Data Analyst,SE,FT,126038.096,US,M,0
+2022,Data Analyst,SE,FT,76386.72,US,M,100
+2022,Data Scientist,SE,FT,292815.76,US,M,100
+2022,Data Scientist,SE,FT,190966.8,US,M,100
+2022,Data Scientist,SE,FT,267353.52,US,M,100
+2022,Data Analyst,SE,FT,216429.04,US,M,100
+2022,Data Scientist,MI,FT,203697.92,US,M,100
+2022,Data Scientist,MI,FT,165504.56,US,M,100
+2022,Data Analyst,EN,FT,85298.512,CA,M,0
+2022,Data Analyst,EN,FT,66201.824,CA,M,0
+2022,Data Engineer,SE,FT,196059.248,US,M,100
+2022,Data Engineer,SE,FT,160412.112,US,M,100
+2022,Data Analyst,SE,FT,164231.456,US,M,0
+2022,Data Analyst,SE,FT,190966.8,US,M,100

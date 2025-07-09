@@ -1,0 +1,60 @@
+---
+title: "Remote Working Ratio v Salary"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(car)
+library(ggplot2)
+library(ggpubr)
+library(dplyr)
+library(stats)
+library(rstatix)
+library(RColorBrewer)
+```
+
+```{r}
+# Change Directory to Location of Cleaned Dataset
+df <- read.csv("/Users/choonray/MH3511/Team Project/DataScienceSalaries.csv")
+```
+
+Chi-Squared Test
+```{r}
+usa = subset(df, df$Company_Location == "US")
+
+us = subset(usa, usa$Remote_Working_Ratio!="50")
+
+nonremote_us = subset(us, us$Remote_Working_Ratio == "0")
+
+remote_us = subset(us, us$Remote_Working_Ratio == "100")
+
+mean_nonremote_us = mean(nonremote_us$Salary_In_SGD)
+
+threshold <- 0.95 * mean_nonremote_us
+
+paycutfive <- nrow(subset(remote_us, Salary_In_SGD <= threshold))
+
+fail_count <- nrow(remote_us) - paycutfive
+
+observed_salary = c(paycutfive, fail_count)
+
+expected_salary = c(0.40, 0.6)
+
+chisq.test(x = observed_salary, p = expected_salary)
+```
+Prop.Test
+```{r}
+success = subset(remote_us, remote_us$Salary_In_SGD>mean_nonremote_us)
+
+result = prop.test(nrow(success),nrow(us), conf.level = 0.95)
+
+result
+
+```
+```{r}
+for (i in seq(from=0.1, to=0.99, by=0.1)){
+  result = prop.test(nrow(success), nrow(us), p=i, conf.level = 0.95)
+  print(paste("p-value for p =", i, " is ", result$p.value))
+}
+```
