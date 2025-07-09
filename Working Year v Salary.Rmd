@@ -1,0 +1,54 @@
+---
+title: "Working Year v Salary"
+output: html_notebook
+---
+
+```{r}
+# Change Directory to Location of Dataset
+datascience = read.csv("Data_Science_Fields_Salary_Categorization.csv")
+```
+
+```{r}
+datascience$Working_Year <- factor(datascience$Working_Year)
+
+#Boxplot
+
+ggplot(datascience,
+        aes(x = Working_Year,
+           y = Salary_In_SGD,
+            fill   = Working_Year,
+            colour = Working_Year)) +
+   geom_boxplot(outlier.shape = NA, alpha = 0.6) +
+   geom_jitter(width = 0.2, size = 1, alpha = 0.6) +
+   labs(
+     title = "Salary Distribution by Working Year",
+     x     = "Working Year",
+     y     = "Salary (in SGD)"
+   )
+   theme_minimal()
+
+```
+
+```{r}
+#Density plot
+ggplot(datascience,
+        aes(x    = Salary_In_SGD,
+            fill = Working_Year)) +
+   geom_density(alpha = 0.5) +
+  labs(
+     title = "Density Plot of Salary by Working Year",
+     x     = "Salary (in SGD)",
+    y     = "Density"
+   )
+ theme_minimal()
+```
+
+```{r}
+aov(datascience$Salary_In_SGD~datascience$Working_Year)
+summary(aov(datascience$Salary_In_SGD~datascience$Working_Year))
+
+
+pairwise.t.test(datascience$Salary_In_SGD, datascience$Working_Year, p.adjust.method = "none")
+
+```
+
