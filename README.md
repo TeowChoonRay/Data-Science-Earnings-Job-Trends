@@ -26,12 +26,13 @@ Submitted for MH3511 Data Analysis with Computer (Team 45):
 | Zhang Yiping | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yiping1708) | [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yiping-zhang-ntu/) |
 
 ## Introduction
-In our project, a dataset containing Salary_In_Rupees of 607 Data Science professionals is used, with other variables such as Designation, Experience, and Company_Location. Based on this dataset, we seek to explore the following statistical relationships, focusing specifically on the variable Salary_In_SGD (Converted from Salary_In_Rupees) in the Data Science field (Section 4):
-- Relation between Designation and Salary_In_SGD (Factoring in Experience)
+In our project, a dataset containing Salary_In_Rupees of 607 Data Science professionals is used, with other variables such as Designation, Experience, and Company_Location. Based on this dataset, we seek to explore the following statistical relationships, focusing specifically on the variable Salary_In_SGD (Converted from Salary_In_Rupees) in the Data Science field:
+- [Data Cleaning and Exploratory Data Analysis](https://github.com/TeowChoonRay/Data-Science-Earnings-Job-Trends/blob/main/DataCleaning%20and%20EDA.Rmd)
+- [Relation between Designation and Salary_In_SGD (Factoring in Experience)](https://github.com/TeowChoonRay/Data-Science-Earnings-Job-Trends/blob/main/Designation%20v%20Salary.Rmd)
 - Relation between Company_Location and Salary_In_SGD
 - Relation between Working Year and Salary_In_SGD
-- Relation between Remote_Working_Ratio and Salary_In_SGD
-- Relation between All Categorical Variables and Salary_In_SGD
+- [Relation between Remote_Working_Ratio and Salary_In_SGD](https://github.com/TeowChoonRay/Data-Science-Earnings-Job-Trends/blob/main/Remote%20Working%20Ratio%20v%20Salary.Rmd)
+- [Relation between All Categorical Variables and Salary_In_SGD](https://github.com/TeowChoonRay/Data-Science-Earnings-Job-Trends/blob/main/Influence%20of%20All%20Categorical%20Variables.Rmd)
 
 ## Conclusion
 In this report, we attempt to answer some of the basic questions related to salaries in the Data Science Industry, relating to working years 2020 to 2022
