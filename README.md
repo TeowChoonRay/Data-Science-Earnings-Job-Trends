@@ -29,8 +29,8 @@ Submitted for MH3511 Data Analysis with Computer (Team 45):
 In our project, a dataset containing Salary_In_Rupees of 607 Data Science professionals is used, with other variables such as Designation, Experience, and Company_Location. Based on this dataset, we seek to explore the following statistical relationships, focusing specifically on the variable Salary_In_SGD (Converted from Salary_In_Rupees) in the Data Science field:
 - [Data Cleaning and Exploratory Data Analysis](https://github.com/TeowChoonRay/Data-Science-Earnings-Job-Trends/blob/main/DataCleaning%20and%20EDA.Rmd)
 - [Relation between Designation and Salary_In_SGD (Factoring in Experience)](https://github.com/TeowChoonRay/Data-Science-Earnings-Job-Trends/blob/main/Designation%20v%20Salary.Rmd)
-- Relation between Company_Location and Salary_In_SGD
-- Relation between Working Year and Salary_In_SGD
+- [Relation between Company_Location and Salary_In_SGD](https://github.com/TeowChoonRay/Data-Science-Earnings-Job-Trends/blob/main/Company%20Location%20v%20Salary.Rmd)
+- [Relation between Working Year and Salary_In_SGD](https://github.com/TeowChoonRay/Data-Science-Earnings-Job-Trends/blob/main/Working%20Year%20v%20Salary.Rmd)
 - [Relation between Remote_Working_Ratio and Salary_In_SGD](https://github.com/TeowChoonRay/Data-Science-Earnings-Job-Trends/blob/main/Remote%20Working%20Ratio%20v%20Salary.Rmd)
 - [Relation between All Categorical Variables and Salary_In_SGD](https://github.com/TeowChoonRay/Data-Science-Earnings-Job-Trends/blob/main/Influence%20of%20All%20Categorical%20Variables.Rmd)
 
