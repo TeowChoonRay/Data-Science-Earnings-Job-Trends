@@ -1,0 +1,257 @@
+---
+title: "Company Location v Salary"
+output: html_notebook
+---
+
+```{r}
+# Change Directory to Location of Dataset
+datascience <- read.csv("/Users/nicoleang/Desktop/MH3511/project/cleaned_DataScienceSalary.csv")
+```
+
+```{r}
+### Filter for Top 6 countries
+top_six <- subset(datascience, Company_Location %in% c("US", "GB", "CA", "DE", "IN", "FR"))
+```
+```{r}
+# Order countries by median salary
+country_stats <- top_six %>%
+  group_by(Company_Location) %>%
+  summarize(
+    median_salary = median(Salary_In_SGD),
+    mean_salary = mean(Salary_In_SGD),
+    count = n()
+  ) %>%
+  arrange(desc(median_salary))
+```
+
+#Compare all 6 Top Countries 
+```{r}
+library(ggplot2)
+library(dplyr)
+library(FSA)
+library(car)
+library(effsize)
+
+# Create an ordered factor for better visualization
+top_six$Company_Location <- factor(top_six$Company_Location, 
+                                  levels = country_stats$Company_Location)
+
+# Kruskal-Wallis test across all 6 countries
+kruskal_all <- kruskal.test(Salary_In_SGD ~ Company_Location, data = top_six)
+print(kruskal_all)
+
+# If significant, perform post-hoc pairwise comparison using Dunn's test
+if (kruskal_all$p.value < 0.05) {
+  cat("\nKruskal-Wallis significant — running pairwise comparisons...\n")
+  
+  dunn_result <- dunnTest(Salary_In_SGD ~ Company_Location, data = top_six, method = "bonferroni")
+  print(dunn_result)
+  
+# Wilcoxon pairwise test
+  wilcox_pairwise <- pairwise.wilcox.test(
+    top_six$Salary_In_SGD, 
+    top_six$Company_Location,
+    p.adjust.method = "bonferroni"
+  )
+  print(wilcox_pairwise)
+}
+
+# Enhanced Boxplot with Sample Sizes
+ggplot(top_six, aes(x = Company_Location, y = Salary_In_SGD, fill = Company_Location)) +
+  geom_boxplot(alpha = 0.7, outlier.shape = NA) +
+  geom_jitter(width = 0.2, alpha = 0.4, size = 1) +
+  labs(title = "Salary Distribution Across 6 Countries",
+       subtitle = "Countries ordered by Median Salary",
+       y = "Salary (in SGD)", 
+       x = "Company Location") +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  geom_text(data = country_stats, 
+            aes(x = Company_Location, 
+                y = max(top_six$Salary_In_SGD) * 1.05, 
+                label = paste("n =", count)),
+            inherit.aes = FALSE)
+
+# Violin Plot showing Distribution Shape
+ggplot(top_six, aes(x = Company_Location, y = Salary_In_SGD, fill = Company_Location)) +
+  geom_violin(trim = FALSE, alpha = 0.7) +
+  geom_boxplot(width = 0.2, fill = "white", alpha = 0.7) +
+  labs(title = "Salary Distribution Shape by Country",
+       subtitle = "Wider sections indicate higher density of observations",
+       y = "Salary (in SGD)", 
+       x = "Company Location") +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+```
+
+Company_Location v Salary (Parametric)
+```{r}
+# Filter only for US and GB
+us_gb <- subset(datascience, Company_Location %in% c("US", "GB"))
+
+us_gb$Company_Location <- as.factor(us_gb$Company_Location)
+
+# Test for normality (Shapiro-Wilk)
+shapiro.test(us_gb$Salary_In_SGD[us_gb$Company_Location == "US"])
+shapiro.test(us_gb$Salary_In_SGD[us_gb$Company_Location == "GB"])
+
+# Levene's Test for equality of variances
+levene_result <- leveneTest(Salary_In_SGD ~ Company_Location, data = us_gb)
+print(levene_result)
+
+# Perform t-test
+t_test_result <- t.test(Salary_In_SGD ~ Company_Location, data = us_gb)
+print(t_test_result)
+
+# Create Visualizations
+# Boxplot with Jittered Points
+plot1 <- ggplot(us_gb, aes(x = Company_Location, y = Salary_In_SGD, fill = Company_Location)) +
+  geom_boxplot(outlier.shape = NA, alpha = 0.6) +
+  geom_jitter(width = 0.2, alpha = 0.4) +
+  labs(title = "Salary Distribution by Company Location", y = "Salary (in SGD)")
+print(plot1)
+
+# Violin Plot with Median Points
+plot2 <- ggplot(us_gb, aes(x = Company_Location, y = Salary_In_SGD, fill = Company_Location)) +
+  geom_violin(trim = FALSE) +
+  stat_summary(fun = "median", geom = "point", shape = 23, size = 2, fill = "white") +
+  labs(title = "Salary Density by Company Location", y = "Salary (in SGD)")
+print(plot2)
+
+# Density Plot
+plot3 <- ggplot(us_gb, aes(x = Salary_In_SGD, fill = Company_Location)) +
+  geom_density(alpha = 0.4) +
+  labs(title = "Salary Distribution Density by Company Location", x = "Salary (in SGD)")
+print(plot3)
+
+```
+
+
+```{r}
+# Filter data for Germany (DE), India (IN), France (FR), and Canada (CA)
+selected_countries <- subset(datascience, Company_Location %in% c("DE", "IN", "FR", "CA"))
+
+# Convert Company_Location to factor 
+selected_countries$Company_Location <- as.factor(selected_countries$Company_Location)
+
+# Kruskal-Wallis test
+kruskal_test <- kruskal.test(Salary_In_SGD ~ Company_Location, data = selected_countries)
+print("Kruskal-Wallis test result:")
+print(kruskal_test)
+
+# Post-hoc comparisons using only Wilcoxon test
+if (kruskal_test$p.value < 0.05) {
+  # Wilcoxon pairwise (Bonferroni), suppressing tie warnings
+  wilcox_result <- suppressWarnings(pairwise.wilcox.test(
+    selected_countries$Salary_In_SGD,
+    selected_countries$Company_Location,
+    p.adjust.method = "bonferroni"
+  ))
+  print("Pairwise Wilcoxon tests with Bonferroni adjustment:")
+  print(wilcox_result)
+}
+
+# Create summary data for annotation
+country_summary <- selected_countries %>%
+  group_by(Company_Location) %>%
+  summarise(n = n(), max = max(Salary_In_SGD))
+
+# Boxplot with jittered points
+ggplot(selected_countries, aes(x = Company_Location, y = Salary_In_SGD, fill = Company_Location)) +
+  geom_boxplot(alpha = 0.7, outlier.shape = NA) +
+  geom_jitter(width = 0.2, height = 0, alpha = 0.5, size = 2) +
+  labs(title = "Salary Distribution by Country",
+       subtitle = "Shows medians, quartiles, and individual data points",
+       x = "Country", y = "Salary (in SGD)") +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  geom_text(data = country_summary, 
+            aes(x = Company_Location, 
+                y = max * 1.05, 
+                label = paste("n =", n)),
+            inherit.aes = FALSE) +
+  scale_y_continuous(labels = scales::comma, 
+                     breaks = seq(0, 200000, 50000),
+                     limits = c(0, 200000))
+
+# Violin Plot
+ggplot(selected_countries, aes(x = Company_Location, y = Salary_In_SGD, fill = Company_Location)) +
+  geom_violin(trim = FALSE, alpha = 0.7) +
+  geom_boxplot(width = 0.1, fill = "white", alpha = 0.5) +
+  stat_summary(fun = median, geom = "point", size = 2, color = "black") +
+  labs(title = "Salary Distribution Shape by Country",
+       subtitle = "Violin width shows density of observations",
+       x = "Country", y = "Salary (in SGD)") +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  scale_y_continuous(labels = scales::comma, 
+                     breaks = seq(0, 200000, 50000),
+                     limits = c(0, 200000))
+
+# Ranked Dot Plot 
+selected_countries %>%
+  group_by(Company_Location) %>%
+  mutate(rank_within_country = rank(Salary_In_SGD, ties.method = "average")) %>%
+  ggplot(aes(x = rank_within_country, y = Salary_In_SGD, color = Company_Location)) +
+  geom_point(size = 3, alpha = 0.7) +
+  facet_wrap(~Company_Location, scales = "free_x") +
+  labs(title = "Ranked Salary Distribution by Country",
+       subtitle = "Shows ordering of salaries within each country",
+       x = "Rank within Country", y = "Salary (in SGD)") +
+  theme_minimal() +
+  scale_y_continuous(labels = scales::comma, 
+                     breaks = seq(0, 200000, 50000))
+
+# Heatmap based on Wilcoxon results (if available)
+if (exists("wilcox_result")) {
+  countries <- levels(selected_countries$Company_Location)
+  sig_df <- expand.grid(Country1 = countries, Country2 = countries)
+  sig_df$p_value <- NA
+  
+  # Extract dimnames to safely access matrix entries
+  mat <- wilcox_result$p.value
+  mat_rows <- rownames(mat)
+  mat_cols <- colnames(mat)
+
+  for (i in 1:nrow(sig_df)) {
+    c1 <- as.character(sig_df$Country1[i])
+    c2 <- as.character(sig_df$Country2[i])
+    
+    if (c1 != c2) {
+      if (c1 %in% mat_rows && c2 %in% mat_cols && !is.na(mat[c1, c2])) {
+        sig_df$p_value[i] <- mat[c1, c2]
+      } else if (c2 %in% mat_rows && c1 %in% mat_cols && !is.na(mat[c2, c1])) {
+        sig_df$p_value[i] <- mat[c2, c1]
+      }
+    }
+  }
+
+  sig_df$significance <- "Not compared"
+  sig_df$significance[!is.na(sig_df$p_value) & sig_df$p_value < 0.001] <- "p < 0.001 (Highly significant)"
+  sig_df$significance[!is.na(sig_df$p_value) & sig_df$p_value >= 0.001 & sig_df$p_value < 0.01] <- "p < 0.01 (Very significant)"
+  sig_df$significance[!is.na(sig_df$p_value) & sig_df$p_value >= 0.01 & sig_df$p_value < 0.05] <- "p < 0.05 (Significant)"
+  sig_df$significance[!is.na(sig_df$p_value) & sig_df$p_value >= 0.05] <- "p ≥ 0.05 (Not significant)"
+  sig_df$significance[sig_df$Country1 == sig_df$Country2] <- "Same country"
+
+  ggplot(sig_df, aes(x = Country1, y = Country2, fill = significance)) +
+    geom_tile(color = "white") +
+    scale_fill_manual(values = c("Same country" = "white", 
+                                 "Not compared" = "grey90",
+                                 "p ≥ 0.05 (Not significant)" = "#FFD1DC", 
+                                 "p < 0.05 (Significant)" = "#FF98CE", 
+                                 "p < 0.01 (Very significant)" = "#FF64B8", 
+                                 "p < 0.001 (Highly significant)" = "#A94064")) +
+    labs(title = "Statistical Significance of Salary Differences: DE, FR, IN, CA",
+         x = "Country", y = "Country",
+         fill = "Significance Level") +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1),
+          legend.title = element_text(face = "bold"))
+}
+```
+
+
+
+```
+
